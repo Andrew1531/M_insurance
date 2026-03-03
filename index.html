@@ -1,1 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Insurance Services | Dagsboro, Delaware</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600;700&family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --m-green-dark: #166534; /* Dark Forest Green */
+            --m-green-primary: #15803d; /* Primary Green */
+            --m-green-accent: #22c55e; /* Bright Green */
+        }
+        
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #ffffff;
+        }
 
+        h1, h2, h3 {
+            font-family: 'Crimson Pro', serif;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(20, 83, 45, 0.85), rgba(20, 83, 45, 0.85)), 
+                        url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .farmers-style-card {
+            border-top: 4px solid var(--m-green-accent);
+            transition: transform 0.3s ease;
+        }
+
+        .farmers-style-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .btn-green-primary {
+            background-color: var(--m-green-dark);
+            color: white;
+            transition: background 0.3s;
+        }
+
+        .btn-green-primary:hover {
+            background-color: #064e3b;
+        }
+
+        .btn-outline-white {
+            border: 2px solid white;
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .btn-outline-white:hover {
+            background-color: white;
+            color: var(--m-green-dark);
+        }
+
+        .logo-shield {
+            background: linear-gradient(135deg, var(--m-green-primary) 0%, var(--m-green-dark) 100%);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Top Bar -->
+    <div class="bg-green-50 py-2 border-b border-green-100">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center text-xs font-bold text-green-800 uppercase tracking-widest">
+            <div><i class="fas fa-map-marker-alt text-green-600 mr-2"></i>Dagsboro, DE</div>
+            <div class="flex space-x-6">
+                <a href="tel:3027326655" class="hover:text-green-600"><i class="fas fa-phone mr-1"></i> (302) 732-6655</a>
+                <span class="hidden sm:inline"><i class="fas fa-shield-alt mr-1"></i> DE License #1234567</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 w-full z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <div class="logo-shield w-12 h-14 flex items-center justify-center text-white font-bold text-2xl mr-3">M</div>
+                    <div class="flex flex-col leading-tight">
+                        <span class="text-xl font-bold text-green-900 tracking-tight">M INSURANCE</span>
+                        <span class="text-xs font-bold text-green-600 tracking-[0.2em] uppercase">Services</span>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex space-x-10 font-bold text-sm text-green-900 uppercase">
+                    <a href="#services" class="hover:text-green-600 transition">Insurance Solutions</a>
+                    <a href="#about" class="hover:text-green-600 transition">Our Agency</a>
+                    <a href="#claims" class="hover:text-green-600 transition">Claims</a>
+                    <a href="#contact" class="bg-green-800 text-white px-6 py-2 rounded shadow-sm hover:bg-green-900 transition">Contact Us</a>
+                </div>
+
+                <div class="lg:hidden">
+                    <button class="text-green-900 text-2xl"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section pt-24 pb-32 px-4 text-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-5 gap-12 items-center">
+            <div class="md:col-span-3">
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
+                    Reliable Protection <br><span class="text-green-400">For Your Future.</span>
+                </h1>
+                <p class="text-xl opacity-95 mb-10 max-w-xl leading-relaxed">
+                    Personalized insurance coverage from your local Dagsboro agents. Whether it's home, auto, or business, we provide the smart choices you deserve.
+                </p>
+                <div class="flex flex-col sm:row space-y-4 sm:space-y-0 sm:space-x-6">
+                    <button class="btn-green-primary px-10 py-4 rounded font-bold text-lg shadow-xl uppercase tracking-wider">
+                        Get A Quote
+                    </button>
+                    <button class="btn-outline-white px-10 py-4 rounded font-bold text-lg uppercase tracking-wider">
+                        Find an Agent
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Lead Form -->
+            <div class="md:col-span-2 bg-white p-8 rounded shadow-2xl text-slate-800">
+                <h3 class="text-2xl font-bold mb-2 text-green-900">Ready to Save?</h3>
+                <p class="text-sm text-slate-500 mb-6">Let's find the right coverage for you.</p>
+                <form id="quoteForm" class="space-y-4" onsubmit="handleQuote(event)">
+                    <div class="space-y-1 text-xs font-bold text-slate-400 uppercase">First Name</div>
+                    <input type="text" class="w-full p-3 bg-slate-50 border-b-2 border-slate-200 focus:border-green-600 outline-none transition" required>
+                    
+                    <div class="space-y-1 text-xs font-bold text-slate-400 uppercase">Last Name</div>
+                    <input type="text" class="w-full p-3 bg-slate-50 border-b-2 border-slate-200 focus:border-green-600 outline-none transition" required>
+                    
+                    <div class="space-y-1 text-xs font-bold text-slate-400 uppercase">Insurance Type</div>
+                    <select class="w-full p-3 bg-slate-50 border-b-2 border-slate-200 focus:border-green-600 outline-none transition">
+                        <option>Auto Insurance</option>
+                        <option>Homeowners</option>
+                        <option>Business Insurance</option>
+                        <option>Life Insurance</option>
+                    </select>
+                    
+                    <button type="submit" class="w-full bg-green-800 text-white py-4 rounded font-bold uppercase tracking-widest mt-4 hover:bg-green-900 transition">
+                        Check My Rate
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <div class="bg-white py-8 border-b">
+        <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-12 items-center opacity-60 grayscale">
+            <span class="font-bold italic text-xl text-green-900">AM Best A-Rated</span>
+            <span class="font-bold italic text-xl text-green-900">Reg 608 Compliant</span>
+            <span class="font-bold italic text-xl text-green-900">Delaware Trust</span>
+            <span class="font-bold italic text-xl text-green-900">24/7 Claims</span>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-green-900 mb-4">Coverage Designed for You</h2>
+                    <p class="text-xl text-slate-500 max-w-2xl">Serving Dagsboro and all of Sussex County with professional expertise.</p>
+                </div>
+                <div class="h-1 w-24 bg-green-600 mb-4 hidden md:block"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Card 1 -->
+                <div class="bg-green-50/50 p-10 rounded farmers-style-card relative">
+                    <i class="fas fa-car text-4xl text-green-800 mb-6"></i>
+                    <h3 class="text-2xl font-bold text-green-900 mb-4">Auto</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">Get more than just a policy. Get discounts for safe driving, good grades, and more.</p>
+                    <a href="#" class="font-bold text-green-700 uppercase text-xs tracking-widest hover:underline">Learn More</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-green-50/50 p-10 rounded farmers-style-card">
+                    <i class="fas fa-home text-4xl text-green-800 mb-6"></i>
+                    <h3 class="text-2xl font-bold text-green-900 mb-4">Home</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">Coastal coverage built for Delaware's unique weather patterns and needs.</p>
+                    <a href="#" class="font-bold text-green-700 uppercase text-xs tracking-widest hover:underline">Learn More</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-green-50/50 p-10 rounded farmers-style-card">
+                    <i class="fas fa-briefcase text-4xl text-green-800 mb-6"></i>
+                    <h3 class="text-2xl font-bold text-green-900 mb-4">Business</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">From small shops to major operations, we protect the Delaware economy.</p>
+                    <a href="#" class="font-bold text-green-700 uppercase text-xs tracking-widest hover:underline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Hours -->
+    <section id="about" class="py-24 px-4 bg-green-900 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div class="relative">
+                <div class="border-l-8 border-white pl-8">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white">Dagsboro Local Agency</h2>
+                    <p class="text-lg opacity-90 mb-10 leading-relaxed">
+                        Located in the **Savannah Square Shopping Center**, we are your local resource for face-to-face insurance service. 
+                    </p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-2xl text-green-400 mr-6 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold uppercase tracking-widest text-xs mb-1">Office Address</h4>
+                                <p class="text-xl">32183 Dupont Boulevard<br>Savannah Square #9<br>Dagsboro, DE 19939</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-2xl text-green-400 mr-6 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold uppercase tracking-widest text-xs mb-2">Agency Hours</h4>
+                                <div class="grid grid-cols-2 gap-x-8 text-sm opacity-95">
+                                    <div>
+                                        <p>Mon - Thu: 8 AM - 4 PM</p>
+                                        <p class="font-bold text-green-400">Fri: 8 AM - 4 PM</p>
+                                    </div>
+                                    <div>
+                                        <p>Sat: By Appointment</p>
+                                        <p>Sun: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rounded-lg shadow-2xl border-4 border-white/10 overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3121!2d-75.24!3d38.54!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b8e123456789!2s32183%20Dupont%20Blvd%2C%20Dagsboro%2C%20DE%2019939!5e0" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Claims Section -->
+    <section id="claims" class="py-20 px-4 bg-green-50 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-green-900 mb-6 italic">Simple. Seamless. Support.</h2>
+            <p class="text-slate-600 mb-10 text-lg">In the event of an accident, our Dagsboro team is ready to help you navigate the process. Professional claims handling is just a call away.</p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-12">
+                <a href="tel:3027326655" class="text-3xl font-bold text-green-800 hover:text-green-600 transition tracking-tighter">
+                    (302) 732-6655
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-white text-slate-900 border-t-8 border-green-900 pt-20 pb-8 px-4">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-2">
+                <div class="flex items-center mb-6">
+                    <div class="logo-shield w-10 h-12 flex items-center justify-center text-white font-bold text-xl mr-3">M</div>
+                    <span class="text-xl font-bold text-green-900">M Insurance Services</span>
+                </div>
+                <p class="max-w-sm text-slate-500 mb-8 leading-relaxed">
+                    Providing expert advice and stable protection for Delaware residents. Your security is our business.
+                </p>
+                <div class="flex space-x-6 text-2xl text-green-800">
+                    <a href="#" class="hover:text-green-600"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="hover:text-green-600"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-bold text-green-900 uppercase text-xs tracking-widest mb-6">Products</h4>
+                <ul class="space-y-4 text-sm font-medium">
+                    <li><a href="#" class="hover:text-green-600">Automobile</a></li>
+                    <li><a href="#" class="hover:text-green-600">Homeowners</a></li>
+                    <li><a href="#" class="hover:text-green-600">Commercial Liability</a></li>
+                    <li><a href="#" class="hover:text-green-600">Life Insurance</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="font-bold text-green-900 uppercase text-xs tracking-widest mb-6">Resources</h4>
+                <ul class="space-y-4 text-sm font-medium">
+                    <li><a href="#" class="hover:text-green-600">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-green-600">Claims Center</a></li>
+                    <li><a href="#" class="hover:text-green-600">DE Dept of Insurance</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto border-t border-slate-100 pt-8 flex flex-col items-center space-y-4">
+            <div class="text-[10px] text-slate-400 font-bold uppercase tracking-widest text-center">
+                <p>&copy; 2026 M Insurance Services. All rights reserved. Licensed in the State of Delaware.</p>
+            </div>
+            <div class="text-xs font-bold text-slate-500">
+                Powered by <a href="https://ladmedia.co" target="_blank" class="text-green-700 hover:text-green-500 transition decoration-2 underline-offset-4 underline">LAD MEDIA</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple Success Toast -->
+    <div id="modal" class="fixed bottom-10 right-10 bg-green-900 text-white p-6 rounded shadow-2xl hidden z-[100] border-l-8 border-green-400">
+        <div class="flex items-center">
+            <i class="fas fa-check-circle text-2xl text-green-400 mr-4"></i>
+            <div>
+                <p class="font-bold">Request Sent</p>
+                <p class="text-xs opacity-80">An agent will call you within 2 hours.</p>
+            </div>
+            <button onclick="closeModal()" class="ml-8 text-white/50 hover:text-white"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <script>
+        function handleQuote(e) {
+            e.preventDefault();
+            document.getElementById('modal').style.display = 'block';
+            e.target.reset();
+            setTimeout(closeModal, 6000);
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
